@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "./Banner";
 import CategoryList from "./CategoryList";
 import useTitle from "./CustomHook/useTitle";
+import FeaturedJobs from "./FeaturedJobs";
 
 const Home = () => {
   const heading1 = useTitle(
@@ -14,17 +15,18 @@ const Home = () => {
   );
   return (
     <div>
-      <Banner />
-      <div className="text-center my-10">
-        <h2 className="text-3xl font-semibold">{heading1.title}</h2>
+        <Banner />
+        <div className="text-center my-10">
+            <h2 className="text-3xl font-semibold">{heading1.title}</h2>
             <p className="text-lg">{heading1.disc}</p>
-      </div>
-      <CategoryList className/> <hr/>
-      <div className="text-center mt-16 mb-8">
+        </div>
+        <CategoryList />
+        <div className="text-center mt-16 mb-8">
         <h2 className="text-3xl font-semibold">{heading2.title}</h2>
-        <p className="text-lg">{heading2.disc}
-        </p>
-      </div>
+        <p className="text-lg">{heading2.disc}</p>
+        </div>
+
+        <FeaturedJobs/>
     </div>
   );
 };

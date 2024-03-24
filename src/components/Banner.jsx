@@ -13,8 +13,8 @@ const Banner = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">One Step Closer To Your Dream Job</h1>
-            <p className="mb-5 text-lg">
+            <h1 className="mb-5 text-5xl text-gray-300 bg-[#cdb5b586] rounded-2xl py-4 font-bold">One Step Closer To Your Dream Job</h1>
+            <p className="mb-5 text-gray-300 bg-[#cdb5b586] rounded-2xl px-2 py-4 text-lg">
             Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
             </p>
             <button className="btn btn-info ">Get Started</button>
