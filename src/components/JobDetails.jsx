@@ -6,19 +6,21 @@ import { FiPhone } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { AiOutlineCheck } from "react-icons/ai";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveJob } from './LocalStorage';
 
 
 const JobDetails = () => {
 
     const jobs = useLoaderData();
     const {id} = useParams();
-    // console.log(typeof id); //string
     const job = jobs.find(job=>job.id == parseInt(id));
-    // console.log(job);
-
-
-
-
+    
+    const handleToast = ()=>{
+        saveJob(parseInt(id));
+        toast("You have applied for this job");
+    }
 
     return (
         <div className='p-20 '>
@@ -43,9 +45,10 @@ const JobDetails = () => {
                     <p><span className='font-semibold  flex items-center gap-1'><AiOutlineMail />Email</span>{job.contact_information.email}</p>
                     <p><span className='font-semibold  flex items-center gap-1'><CiLocationArrow1 />Adress</span>{job.contact_information.address}</p>
 
-                    <button className='btn btn-success'><AiOutlineCheck />Apply now</button>
+                    <button onClick={handleToast} className='btn btn-success'><AiOutlineCheck />Apply now</button>
                 </div>
            </div>
+           <ToastContainer />
         </div>
     );
 };

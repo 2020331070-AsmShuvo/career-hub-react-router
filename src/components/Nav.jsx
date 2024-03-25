@@ -49,7 +49,7 @@ const Nav = () => {
               <NavLink to="/featured"> Featured Jobs</NavLink>
             </li>
             <li>
-              <NavLink to="/blog"> Blog</NavLink>
+              <NavLink to="/applied"> Appied Jobs</NavLink>
             </li>
           </ul>
         </div>
