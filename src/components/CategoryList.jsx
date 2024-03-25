@@ -15,7 +15,7 @@ const CategoryList = () => {
     return (
         <div className='flex justify-around items-center m-4'>
             {
-                categroies.map(it=><Category category_name={it.category_name} availability={it.availability} />)
+                categroies.map(it=><Category category_name={it.category_name} key={it.id} availability={it.availability} />)
             }
         </div>
     );

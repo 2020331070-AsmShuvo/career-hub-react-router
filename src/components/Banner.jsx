@@ -12,12 +12,12 @@ const Banner = () => {
       >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl text-gray-300 bg-[#cdb5b586] rounded-2xl py-4 font-bold">One Step Closer To Your Dream Job</h1>
-            <p className="mb-5 text-gray-300 bg-[#cdb5b586] rounded-2xl px-2 py-4 text-lg">
+          <div className="w-full">
+            <h1 className="mb-5 w-1/2 text-5xl mx-auto text-gray-300 bg-[#cdb5b550] rounded-2xl py-4 font-bold">One Step Closer To Your Dream Job</h1>
+            <p className="mb-5 w-2/3 mx-auto text-gray-300 bg-[#cdb5b551] rounded-2xl px-2 py-4 text-lg">
             Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
             </p>
-            <button className="btn btn-info ">Get Started</button>
+            <button className="btn btn-success ">Get Started</button>
           </div>
         </div>
       </div>

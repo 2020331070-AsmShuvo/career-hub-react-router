@@ -31,7 +31,7 @@ const Nav = () => {
                 <NavLink to="/"> Home</NavLink>
               </li>
               <li>
-                <NavLink to="/applied"> Applied Jobs</NavLink>
+                <NavLink to="/featured"> Featured Jobs</NavLink>
               </li>
               <li>
                 <NavLink to="/blog"> Blog</NavLink>
@@ -46,7 +46,7 @@ const Nav = () => {
               <NavLink to="/"> Home</NavLink>
             </li>
             <li>
-              <NavLink to="/applied"> Applied Jobs</NavLink>
+              <NavLink to="/featured"> Featured Jobs</NavLink>
             </li>
             <li>
               <NavLink to="/blog"> Blog</NavLink>
@@ -54,7 +54,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn">Search</a>
         </div>
       </div>
     </div>
